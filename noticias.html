@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamo de Cordoba | Noticias</title>
+    <link rel="stylesheet" href="./css/noticias.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./Images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+</head>
+<body>
+    
+<!-- Inicio Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./Images/logo.png" alt="Logo del Club">
+    </div>
+    <ul class="nav-menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./noticias.html">Noticias</a></li>
+        <li class="dropdown">
+            <a href="#acerca" class="dropdown-btn">Acerca de Nosotros ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="./Quienes_Somos.html">Quiénes Somos</a></li>
+                <li><a href="./Sedes_Dynamo.html">Sedes</a></li>
+                <li><a href="./Formadores.html">Formadores</a></li>
+            </ul>
+        </li>
+        
+        <li class="dropdown">
+            <a href="#el-club" class="dropdown-btn">El Club ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="./categorias.html">Categorías</a></li>
+                <li><a href="./torneos.html">Torneos y Competencias</a></li>
+                <li><a href="./jugadoresdestacados.html">Jugadores Destacados</a></li>
+            </ul>
+        </li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+
+    <button class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    
+</nav>
+<!-- Fin Navbar -->
+     
+  <!--(Hero Section Inicio) -->
+  <section class="hero-section">
+    <div class="hero-content">
+    </div>
+  </section>
+  <!--(Hero Section)Fin -->
+
+
+  <section class="noticias">
+    <h2 class="noticias-titulo">Últimas Noticias</h2>
+    <div id="noticias-contenedor" class="noticias-contenedor">
+    </div>
+    <div class="noticias-boton-contenedor">
+      <button id="cargar-mas" class="boton-cargar-mas">Cargar más noticias</button>
+    </div>
+  </section>
+  
+  
+
+<!-- Footer Inicio -->
+<footer class="site-footer">
+    <div class="footer-background"></div>
+    <div class="footer-content">
+      <!-- Patrocinadores -->
+      <div class="footer-sponsors">
+        <h3 class="footer-title">Participaciones</h3>
+        <div class="sponsors-logos">
+          <img src="sponsors/ligavallecaucana.png" alt="Liga Vallecaucana">
+          <img src="sponsors/torneolasamericas.png" alt="Torneo Las Américas">
+          <img src="sponsors/copababu.png" alt="Delicias Luku">
+          <img src="sponsors/bahiacocecer.png" alt="Bahía Soccer">
+          <img src="sponsors/images.png" alt="Fútbol Paz">
+          <img src="sponsors/babyfutbol.png" alt="Baby Paz">
+        </div>
+      </div>
+  
+      <!-- Redes Sociales -->
+      <div class="footer-social">
+        <h3 class="footer-title">¡Síguenos en nuestras redes sociales!</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/dynamo.decordoba.1" target="_blank">
+            <img src="./Images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/club_deportivodynamo/" target="_blank">
+            <img src="./Images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+  
+      <!-- Contacto -->
+      <div class="footer-contact">
+        <p>Correo: <a href="mailto:info@clubdynamo.com">info@clubdynamo.com</a></p>
+        <p>Teléfono: 312 67323778 - 312 6746823</p>
+        <p>Dirección: Ciudad Córdoba, Cali</p>
+      </div>
+  
+      <!-- Derechos Reservados -->
+      <div class="footer-bottom">
+        <p>© 2025 Club Deportivo Dynamo. Todos los derechos reservados.</p>
+        <p>Diseñado y desarrollado por <a href="#">GhostRz</a>.</p>
+      </div>
+    </div>
+</footer>
+<!-- Footer Fin -->
+
+<!-- Noticias Inicio -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const noticiasContenedor = document.getElementById("noticias-contenedor");
+    const cargarMasBtn = document.getElementById("cargar-mas");
+  
+    // Noticias precargadas con fechas
+ 
+    // Noticias precargadas con fechas y enlaces actualizados
+const noticias = [
+  {
+    imagen: "./Noticias/incripcionesabiertas.jpg",
+    titulo: "🎉 ¡Inicio Oficial de Entrenamientos en Vegas de Comfandi! ",
+    descripcion: "La espera ha terminado y hoy, miércoles 15 de enero, damos inicio a los entrenamientos en nuestra Sede Vegas de Comfandi. ",
+    link: "./NoticiasElaboradas/Inicio Oficial de Entrenamientos en Vegas de Comfandi.html",
+    fecha: "2025-01-16"
+  },
+  {
+    imagen: "./Noticias/comunicadooficial.jpg",
+    titulo: "📣 ¡El Club Deportivo Dynamo Inicia Actividades en Ciudad Córdoba! ⚽",
+    descripcion: "El Club Deportivo Dynamo informa a todos los seguidores, deportistas y padres de familia que este jueves 16 de enero se realizará nuestra primera reunión del año",
+    link: "./NoticiasElaboradas/El_Club_Deportivo_Dynamo_Inicia_Actividades_en_Ciudad_Córdoba.html",
+    fecha: "2025-01-15"
+  },
+  {
+    imagen: "./Noticias/formadopromesas.jpg",
+    titulo: "Formando Grandes Promesas",
+    descripcion: "Estamos a pocos días de iniciar y Arrancamos con todo Prepárate para una nueva temporada llena de esfuerzo, diversión y superación en nuestro club deportivo.",
+    link: "./NoticiasElaboradas/Formando_Grandes_Promesas.html",
+    fecha: "2025-01-14"
+  },
+  {
+    imagen: "./Noticias/vueltasaclases.jpg",
+    titulo: "Estamos a 5 Días de Iniciar",
+    descripcion: "¡De Vueltas a Clases!",
+    link: "./NoticiasElaboradas/Estamos_a_5_Días_de_Iniciar.html",
+    fecha: "2025-01-11"
+  },
+  {
+    imagen: "./Noticias/matriculasabiertas.jpg",
+    titulo: "¡Llegamos recargados, unete a nuestra familia inscripciones abiertas!",
+    descripcion: "Matriculas Abiertas",
+    link: "./NoticiasElaboradas/Llegamos_recargados,_unete_a_nuestra_familia_inscripciones_abiertas.html",
+    fecha: "2025-01-09"
+  },
+  {
+    imagen: "./Noticias/despedida2024.jpg",
+    titulo: "Prepárate para la despedida de Fin de Año",
+    descripcion: "¡NUESTRA GRAN DESPEDIDA SE ACERCA NO FALTES!",
+    link: "./NoticiasElaboradas/Prepárate_para_la_despedida_de_Fin_de_Año.html",
+    fecha: "2024-12-17"
+  },
+  {
+    imagen: "../Noticias/campeones.jpg",
+    titulo: "Final Copa Atlas| Formativo 🏆",
+    descripcion: "Hoy  finaliza el torneo copa átlas para nuestras categorías formativas, que se consagraron campeonas",
+    link: "./NoticiasElaboradas/Final_Copa_Atlas_Formativo.html",
+    fecha: "2024-12-15"
+  },
+  {
+    imagen: "./Noticias/exformadores.jpg",
+    titulo: "De Ex Jugadores de nuestro club a formadores de nuestro club🧡🖤",
+    descripcion: "En club deportivo dynamo, no solo formamos grandes deportistas; también nos dedicamos a formar a los futuros formadores del fútbol. ",
+    link: "./NoticiasElaboradas/De_Ex_Jugadores_de_nuestro_club_a_formadores_de_nuestro_club.html",
+    fecha: "2024-12-11"
+  },
+  {
+    imagen: "./Noticias/botadeoro.jpg",
+    titulo: "Bota de Oro @lifutbolvalle",
+    descripcion: "Nuestro jugador Juan José Preciado de la categoría Sub-13 se alzó con la bota de oro, siendo uno de los jugadores más destacados de liga vallecaucana de fútbol con 34 anotaciones⚽️",
+    link: "./NoticiasElaboradas/Bota_de_Oro_@lifutbolvalle.html",
+    fecha: "2024-12-10"
+  },
+  {
+    imagen: "./Noticias/subcampeones.jpg",
+    titulo: "Liga Vallecaucana | ¡SubCampeones! U-14",
+    descripcion: "VOLVEREMOS MÁS FUERTES⚔️",
+    link: "../NoticiasElaboradas/Liga_Vallecaucana__SubCampeones_U_14.html",
+    fecha: "2024-12-10"
+  },
+];
+
+
+    // Ordenar noticias por fecha más reciente
+    noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+  
+    let noticiasCargadas = 0;
+    const cantidadPorCarga = 3; // Número de noticias a cargar por clic
+  
+    function cargarNoticias() {
+      const limite = noticiasCargadas + cantidadPorCarga;
+      for (let i = noticiasCargadas; i < limite && i < noticias.length; i++) {
+        const noticia = noticias[i];
+  
+        const noticiaElemento = document.createElement("div");
+        noticiaElemento.className = "noticia";
+        noticiaElemento.innerHTML = `
+          <img src="${noticia.imagen}" alt="${noticia.titulo}">
+          <div class="noticia-contenido">
+            <h3 class="noticia-titulo">${noticia.titulo}</h3>
+            <p class="noticia-fecha">${new Date(noticia.fecha).toLocaleDateString("es-ES", {
+              year: "numeric",
+              month: "long",
+              day: "numeric"
+            })}</p>
+            <p class="noticia-descripcion">${noticia.descripcion}</p>
+            <a href="${noticia.link}" class="noticia-boton">Leer más</a>
+          </div>
+        `;
+        noticiasContenedor.appendChild(noticiaElemento);
+      }
+  
+      noticiasCargadas = limite;
+  
+      // Ocultar el botón si se han cargado todas las noticias
+      if (noticiasCargadas >= noticias.length) {
+        cargarMasBtn.style.display = "none";
+      }
+    }
+  
+    cargarMasBtn.addEventListener("click", cargarNoticias);
+  
+    // Cargar las primeras noticias al inicio
+    cargarNoticias();
+  });
+</script>
+<!-- Footer Fin -->
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+
+</body>
+</html>
